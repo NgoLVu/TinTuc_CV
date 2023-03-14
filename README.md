@@ -1,10 +1,10 @@
 <pre> 
 
-<h1 sytle="text-color:red">Project web tin tức ứng tuyển:</h1>
-<h2 style="text-color:blue">
+<h1 sytle="color:red">Project web tin tức ứng tuyển:</h1>
+<h3 style="color:blue">
 Hướng dẫn cài đặt :chạy file dbtintuc.sql trong folder database trên mysql, khởi chạy trên VS Code:php artisan serve
-</h2>
-<h2>Nội dung xây dựng Database cho project </h2>
+</h3>
+<p><strong>Nội dung xây dựng Database cho project</strong></p>
 csdl:
 bảng user:id,name,email,password,groupUser_id(0);//với nhóm người dùng mặc định là 0
 bảng News:id,tilte,summary,content,created_at,user_id,groupNew_id(0);//với nhóm bài viết mặc định là 0
