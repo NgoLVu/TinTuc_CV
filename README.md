@@ -1,8 +1,9 @@
 <pre> 
 
-<h1 sytle="color:red">Project web tin tức ứng tuyển:</h1>
+<h1 style="color:red">Project web tin tức ứng tuyển:</h1>
 <h3 style="color:blue">
-Hướng dẫn cài đặt :chạy file dbtintuc.sql trong folder database trên mysql, khởi chạy trên VS Code:php artisan serve
+Hướng dẫn cài đặt :chạy file dbtintuc.sql trong folder database trên mysql, 
+khởi chạy trên VS Code:php artisan serve
 </h3>
 <p><strong>Nội dung xây dựng Database cho project</strong></p>
 csdl:
