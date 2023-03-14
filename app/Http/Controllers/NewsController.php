@@ -197,7 +197,7 @@ class NewsController extends Controller
     }
     public function NewsConfirm()
     {
-        $newslists=$this->news->getall();
+        $newslists=$this->news->getAllConFirm();
         $errormessage="Vui lòng kiểm tra dữ liệu vào";
         return view('pages.post',compact('newslists','errormessage'));
     }

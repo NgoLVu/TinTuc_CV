@@ -24,6 +24,9 @@ class NewsModel extends Model
         ->join('group_news','group_news.id','=','tb_news.groupNew_id')
         ->get();
     }
+    public function getAllConFirm(){
+        return DB::table($this->table)->where('groupNew_id',2)->get();
+    }
     public function detailNews($id){
         return DB::table($this->table)
         ->select('tb_news.*','tb_user.name as userID','group_news.name as status')
