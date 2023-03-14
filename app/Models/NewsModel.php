@@ -29,11 +29,11 @@ class NewsModel extends Model
     }
     public function detailNews($id){
         return DB::table($this->table)
+        ->where('tb_news.id', $id)
         ->select('tb_news.*','tb_user.name as userID','group_news.name as status')
         ->join('tb_user','tb_user.id','=','tb_news.id_user')
         ->join('group_news','group_news.id','=','tb_news.groupNew_id')
-            ->where('id', $id)
-            ->first();
+        ->get();
     }
     public function add($data){
         return DB::table($this->table)->insert($data);

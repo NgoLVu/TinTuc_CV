@@ -203,7 +203,7 @@ class NewsController extends Controller
     }
     public function NewsDetail($id)
     {
-        $newslists=$this->news->getallById($id);
+        $newslists=$this->news->detailNews($id);
         $errormessage="Vui lòng kiểm tra dữ liệu vào";
         return view('pages.detail',compact('newslists','errormessage'));
     }
