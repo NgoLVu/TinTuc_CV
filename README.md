@@ -1,3 +1,4 @@
+<pre> 
 Project web tin tức ứng tuyển:
 csdl:
 bảng user:id,name,email,password,groupUser_id(0);//với nhóm người dùng mặc định là 0
@@ -29,3 +30,4 @@ Table:User,News,Group(cả 2 bảng nhóm user,news):
 	+Sửa: DB::table($this->table)->where('id',$id)->update($data);
 	+Xóa: DB::table($this->table)->where('id',$id)->delete();
 	+Hiển thị:DB::table($this->table)->get();
+</pre>
